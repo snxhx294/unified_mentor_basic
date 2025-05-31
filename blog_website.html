@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#post1">Post 1</a></li>
+                <li><a href="#post2">Post 2</a></li>
+                <li><a href="#post3">Post 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="post1" class="blog-post">
+            <h2>Post 1 Title</h2>
+            <p><em>Published on: May 20, 2025</em></p>
+            <img src="https://via.placeholder.com/600x300" alt="Post 1 Image">
+            <p>Content for the first blog post goes here. This is an example of a blog post.</p>
+
+            <div class="comments-section">
+                <h3>Comments</h3>
+                <div id="comments-post1"></div>
+                <textarea id="comment-input-post1" placeholder="Write your comment..."></textarea>
+                <button onclick="addComment('post1')">Submit</button>
+            </div>
+        </section>
+
+        <section id="post2" class="blog-post">
+            <h2>Post 2 Title</h2>
+            <p><em>Published on: May 21, 2025</em></p>
+            <img src="https://via.placeholder.com/600x300" alt="Post 2 Image">
+            <p>Content for the second blog post goes here. This is an example of a blog post.</p>
+
+            <div class="comments-section">
+                <h3>Comments</h3>
+                <div id="comments-post2"></div>
+                <textarea id="comment-input-post2" placeholder="Write your comment..."></textarea>
+                <button onclick="addComment('post2')">Submit</button>
+            </div>
+        </section>
+
+        <section id="post3" class="blog-post">
+            <h2>Post 3 Title</h2>
+            <p><em>Published on: May 22, 2025</em></p>
+            <img src="https://via.placeholder.com/600x300" alt="Post 3 Image">
+            <p>Content for the third blog post goes here. This is an example of a blog post.</p>
+
+            <div class="comments-section">
+                <h3>Comments</h3>
+                <div id="comments-post3"></div>
+                <textarea id="comment-input-post3" placeholder="Write your comment..."></textarea>
+                <button onclick="addComment('post3')">Submit</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Blog Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
